@@ -32,13 +32,12 @@ export default function Navbar() {
     router.push("/login")
   }
 
-  const linkStyle = (path) =>
-    `cursor-pointer transition duration-300 ${
-      pathname === path
-        ? "text-red-600"
-        : "text-gray-300 hover:text-white"
-    }`
-
+const linkStyle = (path: string) =>
+  `cursor-pointer transition duration-300 ${
+    pathname === path
+      ? "text-red-600"
+      : "text-gray-300 hover:text-white"
+  }`;
   return (
     <nav className="w-full bg-black text-white flex items-center justify-between px-8 py-4 fixed top-0 left-0 z-50">
 
